@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background -->
+<div class="background-slideshow" id="slideshow"></div>
+
+<!-- MAIN CONTAINER (ENVELOPE + LETTER ONLY) -->
+<div class="container">
+  <div class="envelope" id="envelope">
+
+    <div class="envelope-body">
+
+      <!-- TOP FLAP -->
+      <div class="envelope-flap">
+        <svg viewBox="0 0 500 100" class="flap-svg" aria-hidden="true">
+          <!-- CLOSED triangle (points down) -->
+          <polygon points="0,0 500,0 250,150" fill="#ead8c6"></polygon>
+        </svg>
+      </div>
+
+      <!-- ENVELOPE BASE -->
+      <svg viewBox="0 0 500 300" class="envelope-svg" aria-hidden="true">
+        <rect x="0" y="100" width="500" height="200" fill="#f5e6d3"/>
+        <polygon points="0,100 250,220 500,100" fill="#e8d5c0"/>
+      </svg>
+
+      <!-- WAX SEAL -->
+      <div class="wax-seal">❤</div>
+
+    </div>
+
+    <!-- LETTER -->
+    <div class="letter" id="letter">
+      <div class="letter-content">
+        <p id="message" style="white-space: pre-line;"></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- END OF MAIN CONTAINER -->
+
+
+<!-- QUESTION PANEL (below letter, slides up) -->
+<div class="final-question" id="finalQuestion">
+  <div class="final-content">
+    <h2>Will you be my valentine again this year?</h2>
+
+    <div class="final-buttons">
+      <button class="yes-btn" id="yesBtn">Yes 💖</button>
+      <button class="always-btn" id="alwaysBtn">Always ♾️</button>
+      <button class="no-btn" id="noBtn">No</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- END CREDITS SCENE -->
+<div class="credits-scene" id="creditsScene">
+  <div class="credits-photo" id="creditsPhoto"></div>
+  <div class="credits-text" id="creditsText">
+    Cheers to being with you for 5 years 🥂
+  </div>
+</div>
+
+
+<!-- HEART PARTICLES -->
+<div class="hearts-container" id="hearts"></div>
+
+<audio id="ambientAudio" src="ambient.mp3" loop></audio>
+<audio id="palagiAudio" src="palagi.mp3" loop></audio>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
